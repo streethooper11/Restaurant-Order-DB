@@ -1,0 +1,58 @@
+Endpoint 1:
+Description: Get Account Details by Email
+URL: http://localhost:8080/api/account
+Method: Get
+Input: email : string
+Output [{
+    "Email_ID" : string
+        "Password" : string
+        "FName" : string
+        "LName" : string
+        "Type" : string
+}]
+
+Endpoint 2:
+Description: Create new account
+URL: http://localhost:8080/api/account
+Method: Post
+Input: [{
+    "Email_ID" : string
+    "Password" : string
+    "FName" : string
+    "LName" : string
+    "Type" : string
+}]
+
+Output: [{
+   "Email_ID" : string
+   "Password" : string
+   "FName" : string
+   "LName" : string
+   "Type" : string
+}]
+
+
+Endpoint 3: 
+Description: Get Profile by Email
+URL: http://localhost:8080/api/profile
+Method: Get
+Input: email: string
+Output: [{
+    "Email_ID" : string
+    "Name" : string
+}]
+
+Endpoint 4:
+Description: Get History by History ID
+URL: http://localhost:8080/api/history
+Method: Get
+Input: ID: string
+Output: [{
+    "History_ID" : int 
+    "Order_Place" : string
+    "Total_Price" : int 
+    "UserEmail_ID" : string
+    "Order_ID" : string
+}]
+
+
